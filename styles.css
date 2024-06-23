@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(hsl(216, 12%, 8%), #000);
+}
+
+.block {
+    background: linear-gradient(hsl(213, 19%, 18%), hsl(216, 12%, 8%));
+    border: none;
+    border-radius: 15px;
+    margin: 20% 25%;
+    padding: 20px;
+}
+
+.star {
+    height: 35px;
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: hsl(208, 17%, 22%);
+    border: none;
+    border-radius: 50%;
+
+}
+
+h1 {
+    color: #fff;
+}
+
+p {
+    color: hsl(217, 12%, 63%);
+}
+
+.score {
+    display: flex;
+    justify-content: space-evenly;
+    color: hsl(217, 12%, 63%);
+    margin: 30px 0;
+}
+
+.score-item, .score-item button {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: hsl(216, 12%, 8%);
+    border: none;
+    border-radius: 50%;
+    color: hsl(217, 12%, 63%);
+}
+
+.hover:hover button,  .hover:hover{
+    background-color: #fff;
+    color:#000;
+    cursor: pointer;
+}
+
+.active, .active button {
+    background-color: hsl(25, 97%, 53%);
+    color: #fff;
+}
+
+.score-item button {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.submit {
+    background: hsl(25, 97%, 53%);
+    color: hsl(216, 12%, 8%);
+    padding: 5%;
+    width: 100%;
+    border: none;
+    border-radius: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.submit:hover {
+     cursor: pointer;
+     background: hsl(25, 84%, 42%);
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.attribution {
+    position: fixed;
+    bottom: 10px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    width: 100%;
+}
+.result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.result-item {
+    padding: 0;
+    margin: 0;
+}
+
+.result-item p {
+    text-align: center;
+}
+
+.result-item h1 {
+    margin-bottom: 0;
+}
+
+.unvisible {
+    display: none;
+}
+
+@media only screen and (max-width: 426px) {
+    .block {
+        margin: 20% 5%;
+    }
+}
+
+@media (min-width: 1023px) {
+    .block {
+        margin: 10% 35%;
+    }
+}

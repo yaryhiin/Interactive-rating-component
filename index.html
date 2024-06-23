@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Frontend Mentor | Interactive rating component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="rating block">
+      <div class="rating-item star">
+        <img src="./images/icon-star.svg" alt="Star" />
+      </div>
+      <div class="rating-item">
+        <h1 class="text">How did we do?</h1>
+      </div>
+      <div class="rating-item">
+        <p class="text">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+      </div>
+      <div class="rating-item">
+        <div class="score">
+          <div class="score-item hover"><button value="1">1</button></div>
+          <div class="score-item hover"><button value="2">2</button></div>
+          <div class="score-item hover"><button value="3">3</button></div>
+          <div class="score-item hover"><button value="4">4</button></div>
+          <div class="score-item hover"><button value="5">5</button></div>
+        </div>
+      </div>
+      <div class="rating-item button">
+        <button class="submit">SUBMIT</button>
+      </div>
+    </div>
+
+    <div class="result block unvisible">
+      <div class="result-item thank-you">
+        <img src="./images/illustration-thank-you.svg" alt="Thank You" />
+      </div>
+      <div class="result-item selected-score">
+        <p class="text">You selected <span class="number"></span> out of 5</p>
+      </div>
+      <div class="result-item"><h1 class="text">Thank you!</h1></div>
+      <div class="result-item">
+        <p class="text">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/yaryhiin">Tymofii Yaryhin</a>.
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
